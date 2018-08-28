@@ -1,14 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const bookSchema = new Schema ({
-    email: String,
-    password: String,
-    role: {
-        type: String,
-        enum: ['Boss', 'Developer', 'TA']
-    }
-
-
+    name: String,
+    location: {
+        lat: Number,
+        lng: Number,
+    },
+    notes: String
 })
 
 module.exports = mongoose.model('Book', bookSchema)

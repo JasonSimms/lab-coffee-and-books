@@ -11,4 +11,10 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.get('/coffeespots', (req, res) => {
+  Coffee.find({}).then(data => {
+      res.send(data)
+  })
+})
+
 module.exports = router;
