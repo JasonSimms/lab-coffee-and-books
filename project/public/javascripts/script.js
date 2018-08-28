@@ -9,12 +9,12 @@ function start() {
         },
     })
 
-    axios.get('/restaurants').then(result => {
-        result.data.forEach(restaurant => {
+    axios.get('/coffeespots').then(result => {
+        result.data.forEach(data => {
             new google.maps.Marker({
-                position: restaurant.location,
+                position: data.location,
                 map: map,
-                title: restaurant.name,
+                title: data.name,
             })
         })
     })
