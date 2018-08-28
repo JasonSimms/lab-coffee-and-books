@@ -1,0 +1,28 @@
+$color1: rgba(41, 47, 54, 1);
+$color2: rgba(78, 205, 196, 1);
+$color3: rgba(247, 255, 247, 1);
+$color4: rgba(255, 107, 107, 1);
+$color5: rgba(255, 230, 109, 1);
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $color1;
+}
+button{
+  background-color: $color3;
+  border-radius: 20px 20px;
+  padding: 6px 2px;
+}
+nav{
+  background-color: $color4;
+  padding: 15px;
+  border-radius: 25px 45px;
+
+}
+.container {
+  background-color: $color1;
+  border-radius: 50px 90px;
+  padding: 30px;
+}
